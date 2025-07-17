@@ -219,4 +219,8 @@ def process_audio():
                 os.remove(path)
         if 'temp_audio_path' in locals() and temp_audio_path and os.path.exists(temp_audio_path):
             os.remove(temp_audio_path)
-            
+
+if __name__ == "__main__":
+    import os
+    port = int(os.environ.get("PORT", 10000))  # Render sets PORT env var
+    app.run(host="0.0.0.0", port=port)
