@@ -23,7 +23,7 @@ if ffmpeg_path:
     os.environ["COQUI_TTS_FFMPEG"] = ffmpeg_path
 
 # Configure Gemini
-genai.configure(api_key="YOUR_API_KEY")  # Replace with your actual key in Render secrets
+genai.configure(api_key="AIzaSyDL8euQekfkLNJ5E2fPGukDd-0H9mMstrc")  # Replace with your actual key in Render secrets
 gemini_model = genai.GenerativeModel('gemini-1.5-flash')
 
 translator = Translator()
